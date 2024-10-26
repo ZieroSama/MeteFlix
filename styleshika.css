@@ -1,0 +1,78 @@
+/* Configuração de cores e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5em;
+    color: #ff6600; /* Cor laranja estilo Crunchyroll */
+    margin-bottom: 20px;
+}
+
+/* Estilo das abas */
+#tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #e5e5e5;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.tab:hover {
+    background-color: #d4d4d4;
+}
+
+.tab.active {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+/* Estilo do conteúdo das abas */
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 640px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Estilo do player de vídeo */
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Estilo do parágrafo de conteúdo */
+p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+}

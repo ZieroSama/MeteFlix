@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shikanoko</title>
+    <link rel="stylesheet" href="styleshika.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="Source/Icon/Icon.png" alt="icone">
+</head>
+<body>
+    <!-- Botão para voltar à página inicial -->
+    <button onclick="goToIndex()" style="margin-bottom: 20px;">Voltar para Home</button>
+    <h1>Shikanoko</h1>
+    <div id="tabs">
+        <div class="tab active" onclick="openTab(event, 'tab2')">Episódios</div>
+        <div class="tab" onclick="openTab(event, 'tab1')">Player</div>
+        <div class="tab" onclick="openTab(event, 'tab3')">Informações</div>
+        <div class="tab" onclick="openTab(event, 'tab4')">Comentários</div>
+    </div>
+
+    <div id="tab1" class="tab-content">
+        <video id="videoPlayer" width="640" height="360" controls>
+            <source src="Animes/Shikanoko/ep1.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+    <div id="tab2" class="tab-content active">
+        <h2>Selecione um Episódio</h2>
+        <ul>
+            <li><a href="#" onclick="changeEpisode(https://rr3---sn-bg0eznzy.googlevideo.com/videoplayback?expire=1729941392&ei=EF8cZ-vCF6-p3rsP0s2BuAw&ip=2804:71d4:2086:2900:978a:c3ea:c8ff:a2dd&id=1a18ce0c19e5ef22&itag=22&source=blogger&xpc=Egho7Zf3LnoBAQ%3D%3D&met=1729912592,&mh=oP&mm=31&mn=sn-bg0eznzy&ms=au&mv=m&mvi=3&pl=46&rms=au,au&susc=bl&eaua=cm6FAtAAJNo&mime=video/mp4&vprv=1&rqh=1&dur=1421.688&lmt=1720366851320641&mt=1729912157&txp=1311224&sparams=expire,ei,ip,id,itag,source,xpc,susc,eaua,mime,vprv,rqh,dur,lmt&sig=AJfQdSswRQIgRa2YYRuwEQl4Q8xGZ1fpTsFI6EAi_Kkf-tNlosCwWa0CIQDKMod36G6tCYUF-j72m5wC5v8Du0rK-2eSPLWyBDKJjg%3D%3D&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=ACJ0pHgwRQIhAJAAZ8Y7q2RBwOD-DQ54anWOTMTmcPygN07FhkyInmpxAiBpeJChbL4xIxv5XGSFzUc8REdiPZfPnSlXxZ_dXdJuGg%3D%3D&cpn=MKD7c1zn5lnYlqPt&c=WEB_EMBEDDED_PLAYER&cver=1.20241022.01.00)">Episódio 1</a></li>
+            <li><a href="#" onclick="changeEpisode('https://rr2---sn-bg0s7n7z.googlevideo.com/videoplayback?expire=1729941541&ei=pV8cZ_HfL9a10_wPs9_Q0QY&ip=2804:71d4:2086:2900:978a:c3ea:c8ff:a2dd&id=9003daf1f99dacc6&itag=22&source=blogger&xpc=Egho7Zf3LnoBAQ%3D%3D&met=1729912741,&mh=p2&mm=31&mn=sn-bg0s7n7z&ms=au&mv=m&mvi=2&pl=46&rms=au,au&susc=bl&eaua=cm6FAtAAJNo&mime=video/mp4&vprv=1&rqh=1&dur=1415.093&lmt=1720972313422412&mt=1729912396&txp=1311224&sparams=expire,ei,ip,id,itag,source,xpc,susc,eaua,mime,vprv,rqh,dur,lmt&sig=AJfQdSswRAIgfioq0xN1IutbNY61rP1J34GAnQbAR-xLGlZiLjt47kACIGe67yq5HPj4-R0mO-xomY5xPr0uR-6dME7ugqVmxXTs&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=ACJ0pHgwRAIgXsrjyvgiYF6r0TAkuUKAI9ZQuAdhl7LzRcjSj8YL9OoCIGMh0svvcySXJ74S3EVAdUK4AD01smSgMl5RQ-Baa8cm&cpn=2xlCiiJyMkfjHXWd&c=WEB_EMBEDDED_PLAYER&cver=1.20241022.01.00')">Episódio 2</a></li>
+            <li><a href="#" onclick="changeEpisode(https://rr1---sn-bg0s7n7r.googlevideo.com/videoplayback?expire=1729941577&ei=yV8cZ7LlD7r00_wP35WX8AI&ip=2804:71d4:2086:2900:978a:c3ea:c8ff:a2dd&id=0c33cade8b8a16b0&itag=22&source=blogger&xpc=Egho7Zf3LnoBAQ%3D%3D&met=1729912777,&mh=T-&mm=31&mn=sn-bg0s7n7r&ms=au&mv=m&mvi=1&pl=46&rms=au,au&susc=bl&eaua=cm6FAtAAJNo&mime=video/mp4&vprv=1&rqh=1&dur=1415.140&lmt=1721576849066469&mt=1729912623&txp=1311224&sparams=expire,ei,ip,id,itag,source,xpc,susc,eaua,mime,vprv,rqh,dur,lmt&sig=AJfQdSswRQIhAMkXnCbL0WCsqBfQejeGBpAdIDWhkyCs341z0AOaUst6AiBNw39Wv7JdYQthoxhCcxs4-9qHvfD-FoGZcGtyOZFtjg%3D%3D&lsparams=met,mh,mm,mn,ms,mv,mvi,pl,rms&lsig=ACJ0pHgwRAIgeb0cgHIQr3bcMtmTE02L4nVge0CpfEDiZGlxxDQPReMCIBRIG86Vw0mJVKJD80QXk3r9EfuGZitPjDABr3DKltBT&cpn=i69CJhWyvEke895I&c=WEB_EMBEDDED_PLAYER&cver=1.20241022.01.00)">Episódio 3</a></li>
+            <li><a href="#" onclick="changeEpisode(https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D)">Episódio 4</a></li>
+        </ul>
+    </div>
+    <div id="tab3" class="tab-content">
+        <p>O anime Shikanoko (ou My Deer Friend Nokotan) estreou no dia 3 de julho de 2024, e é uma comédia ambientada em um ambiente escolar. A história segue Torako, uma estudante do ensino médio que tenta se manter longe de seu passado problemático. Sua vida muda drasticamente quando ela encontra Nokotan, uma nova aluna com chifres, que está em apuros. A partir daí, uma série de eventos cômicos e caóticos se desenrola, misturando elementos de vida escolar com fantasia e humor</p>
+    </div>
+
+    <div id="tab4" class="tab-content">
+        <p>Aqui os usuários podem comentar sobre o anime.</p>
+    </div>
+
+    <script src="script.js"></script>
+  
+</body>
+</html>
